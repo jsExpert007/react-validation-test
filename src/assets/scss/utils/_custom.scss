@@ -1,0 +1,300 @@
+.v-r {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-c {
+  display: flex;
+  align-items: center;
+}
+
+.h-c {
+  display: flex;
+  justify-content: center;
+}
+
+.h-r {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadow-object {
+  box-shadow: 0px 14px 30px rgba(3, 45, 30, 0.21);
+}
+
+.btn-shadow {
+  box-shadow: 0 7px 5px rgba(3, 45, 30, 0.21);
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.svg-icon {
+  display: flex;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.btn-2 {
+  font-size: 18px;
+  color: var(--white900);
+  padding: 15px 35px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:hover {
+    color: white;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+}
+
+.btn-2-outline {
+  background: none;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+
+  &:focus {
+    border: 1px solid var(--main-color);
+  }
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+.primary-btn {
+  background: var(--blue900);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.round-object {
+  border-radius: 10px;
+}
+
+.btn-link {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue900);
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.sub-list-enter {
+  height: fit-content !important;
+  min-height: fit-content !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  transition: all 200ms ease-out;
+}
+
+.sub-list-enter-done {
+  height: fit-content !important;
+  min-height: fit-content !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  transition: all 400ms ease-out;
+}
+
+.sub-list-exit {
+  height: fit-content !important;
+  min-height: fit-content !important;
+  opacity: 0 !important;
+  transition: all 200ms ease-out;
+}
+
+.sub-list-exit-done {
+  height: 0 !important;
+  min-height: 0 !important;
+  opacity: 0 !important;
+  transition: all 400ms ease-out;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 1s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* space */
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.icon-close {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+input, textarea {
+  box-shadow: none;
+  outline: none;
+}
+
+.error-input {
+  border: 2px solid red !important;
+}
+
+.disable {
+  background-color: var(--gray300);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .show-web {
+    display: block;
+  }
+
+  .show-web-flex {
+    display: flex;
+  }
+
+  .show-mobile,
+  .show-mobile-flex {
+    display: none !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1B1F25;
+    border-radius: 40px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BDBDBD;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .show-web,
+  .show-web-flex {
+    display: none !important;
+  }
+
+  .show-mobile-flex {
+    display: flex;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}

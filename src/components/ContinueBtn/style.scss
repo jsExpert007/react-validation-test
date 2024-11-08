@@ -1,0 +1,43 @@
+.continue-btn {
+  background: var(--main-color);
+  border: none;
+  height: 60px;
+  border-radius: 55px;
+  color: var(--white);
+  width: 100%;
+  font-weight: 700;
+  z-index: 3;
+
+  &.disabled {
+    background-color: var(--blue300_30)
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+    opacity: .9;
+  }
+
+  .left-icon {
+    margin-right: 10px;
+  }
+
+  .right-icon {
+    margin-left: 10px;
+  }
+
+  .btn-txt {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .continue-btn {
+    height: 50px;
+    min-height: 50px;
+
+    .btn-txt {
+      font-size: 14px;
+    }
+  }
+}

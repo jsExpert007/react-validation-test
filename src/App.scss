@@ -1,0 +1,9 @@
+@import './assets/scss/index.scss';
+
+.App {
+  .create-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
